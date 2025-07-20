@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>💊 Medicine Reminder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2d3748;
+        }
+        form {
+            margin: 20px auto;
+            width: 300px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            margin: 5px;
+            background-color: #e2e8f0;
+            border-radius: 5px;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>💊 Medicine Reminder App</h1>
+
+    <form method="POST" action="/add">
+        <input type="text" name="medicine" placeholder="Medicine Name" required>
+        <input type="text" name="time" placeholder="Time (e.g., 9:00 AM)" required>
+        <button type="submit">Add Reminder</button>
+    </form>
+
+    <h2>Your Reminders</h2>
+    <ul>
+        {% for med in medicines %}
+            <li>{{ med.medicine }} at {{ med.time }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
