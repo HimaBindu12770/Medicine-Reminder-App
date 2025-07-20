@@ -1,15 +1,19 @@
-# Medicine Reminder App
+# 💊 Medicine Reminder App 🚨
 
-## 📌 Description:
-This is a simple Python-based application to remind you to take your medicine on time. It works by asking the user for a medicine name and time interval, and it will keep reminding the user at those intervals.
+Welcome to the **Medicine Reminder App** repository! 🎉  
+This is a beginner-friendly **Python-based console application** that reminds users to take their medicines at regular intervals. 🕑💊  
+Also includes a small **HTML + CSS static webpage for project presentation purposes only.** 🎨✨
 
 ---
 
-## 🚀 How to Run:
+## 🚀 Technologies Used 🛠️
 
-### 1️⃣ Install the required packages:
-> This project only uses the built-in **time** module, so no extra packages are needed.
+| Technology | Purpose                               |
+|------------|---------------------------------------|
+| 🐍 **Python**  | Console-based Reminder Application    |
+| 🌐 **HTML**    | Static Webpage for Visual Presentation |
+| 🎨 **CSS**     | Styling the Webpage Presentation     |
 
-If you want to be safe:
-```bash
-pip install -r requirements.txt
+---
+
+## 📂 Folder Structure 🗂️
